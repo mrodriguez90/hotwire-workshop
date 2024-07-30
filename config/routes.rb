@@ -1,6 +1,8 @@
 # frozen_string_literal: true
 
 Rails.application.routes.draw do
+  root 'home#index'
+
   scope format: :json do
     mount_devise_token_auth_for 'User', at: '/api/v1/users', controllers: {
       registrations: 'api/v1/registrations',
@@ -22,6 +24,9 @@ Rails.application.routes.draw do
     end
   end
 
+  resources :products, only: %i[index]
+  resource :shopping_cart, only: :show
+
   devise_for :admin_users, ActiveAdmin::Devise.config
   ActiveAdmin.routes(self)
   namespace :admin do
@@ -32,4 +37,5 @@ Rails.application.routes.draw do
 
   mount Rswag::Ui::Engine => '/api-docs'
   mount Rswag::Api::Engine => '/api-docs'
+  mount Lookbook::Engine, at: '/lookbook' if Rails.env.development?
 end

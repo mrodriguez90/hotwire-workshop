@@ -1,0 +1,5 @@
+<div class="flex flex-col w-2/4">
+  <% @products.each do |product| %>
+    <%= render Card::Product::Component.new(product: product) %>
+  <% end %>
+</div>
