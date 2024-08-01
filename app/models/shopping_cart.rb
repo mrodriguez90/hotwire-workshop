@@ -13,8 +13,6 @@
 #
 #  index_shopping_carts_on_user_id  (user_id)
 #
-FactoryBot.define do
-  factory :shopping_cart do
-    user { nil }
-  end
+class ShoppingCart < ApplicationRecord
+  belongs_to :user
 end

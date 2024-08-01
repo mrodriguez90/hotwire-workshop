@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 # == Schema Information
 #
 # Table name: shipping_addresses
@@ -19,12 +21,12 @@
 #
 FactoryBot.define do
   factory :shipping_address do
-    country { "MyString" }
-    city { "MyString" }
-    state { "MyString" }
-    line1 { "MyString" }
-    line2 { "MyString" }
-    postal_code { "MyString" }
+    country { 'MyString' }
+    city { 'MyString' }
+    state { 'MyString' }
+    line1 { 'MyString' }
+    line2 { 'MyString' }
+    postal_code { 'MyString' }
     order { nil }
   end
 end

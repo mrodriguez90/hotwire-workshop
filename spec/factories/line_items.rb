@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 # == Schema Information
 #
 # Table name: line_items
@@ -24,7 +26,7 @@ FactoryBot.define do
     product { nil }
     order { nil }
     quantity { 1 }
-    unit_price { "9.99" }
-    total_price { "9.99" }
+    unit_price { '9.99' }
+    total_price { '9.99' }
   end
 end
