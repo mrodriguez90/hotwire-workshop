@@ -1,10 +1,10 @@
 # frozen_string_literal: true
 
-module List
+module Card
   module Product
     class Component < ViewComponent::Base
-      def initialize(products:)
-        @products = products
+      def initialize(product:)
+        @product = product
       end
     end
   end
