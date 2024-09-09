@@ -1,0 +1,16 @@
+<div class="flex border-s rounded shadow-lg mb-2 lg:mb-8">
+  <%= image_tag url_for(@product.picture.url), alt: @product.name, class: "p-2 lg:w-40 lg:h-40 w-28" %>
+  <div class="flex flex-1 justify-between items-center">
+    <div class="flex flex-col">
+      <h3 class="font-bold text-sm lg:text-2xl"><%= @product.name%></h3>
+      <span class="bg-lime-500 rounded text-white text-sm p-0.5 w-fit"><%= @product.status&.humanize%></span>
+      <h3 class="text-sm lg:text-2xl mt-6"><%= number_to_currency(@product.unit_price)%></h3>
+    </div>
+    <div class="flex flex-col items-center mr-8">
+      <%= inline_svg_tag('icons/heart-outline.svg', class: 'lg:w-8 lg:h-8') %>
+      <div class="bg-black text-white py-0.5 lg:py-2 px-4 rounded mt-4 hover:bg-gray-800 font-bold text-sm lg:text-base whitespace-nowrap">
+        <%= button_to "Add to Cart"%>
+      </div>
+    </div>
+  </div>
+</div>
