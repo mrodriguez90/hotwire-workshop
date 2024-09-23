@@ -3,9 +3,10 @@
 module List
   module Product
     class Component < ViewComponent::Base
-      def initialize(products:)
+      def initialize(products:, pagination:)
         super
         @products = products
+        @pagination = pagination
       end
     end
   end

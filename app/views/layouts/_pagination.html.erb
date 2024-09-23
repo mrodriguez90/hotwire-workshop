@@ -1,0 +1,11 @@
+<div class="flex justify-between flex-1">
+  <div>
+    <%= link_to '< Previous page', url_for(page: locals[:pagination].prev), class: 'text-blue-500 hover:underline' %>
+  </div>
+  <div>
+    Page <%= locals[:pagination].page %> </h3> of <%= locals[:pagination].pages %>
+  </div>
+  <div>
+    <%= link_to 'Next page >', url_for(page: locals[:pagination].next), class: 'text-blue-500 hover:underline' %>
+  </div>
+</div>

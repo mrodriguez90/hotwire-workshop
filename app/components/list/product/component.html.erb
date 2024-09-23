@@ -2,4 +2,5 @@
   <% @products.each do |product| %>
     <%= render Card::Product::Component.new(product: product) %>
   <% end %>
+  <%= render "layouts/pagination", locals: { pagination: @pagination } %>
 </div>

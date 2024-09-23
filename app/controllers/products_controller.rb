@@ -2,6 +2,6 @@
 
 class ProductsController < ApplicationController
   def index
-    @products = policy_scope(Product).includes(picture_attachment: :blob)
+    @pagy, @products = pagy(policy_scope(Product).includes(picture_attachment: :blob), items: 1)
   end
 end
