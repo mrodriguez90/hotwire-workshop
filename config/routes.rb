@@ -24,6 +24,8 @@ Rails.application.routes.draw do
     end
   end
 
+
+  resources :products, only: %i[index]
   resource :shopping_cart, only: :show
 
   devise_for :admin_users, ActiveAdmin::Devise.config
