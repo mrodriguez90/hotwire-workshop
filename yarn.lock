@@ -5,14 +5,14 @@ __metadata:
   version: 8
   cacheKey: 10c0
 
-"@activeadmin/activeadmin@npm:3.2.2":
-  version: 3.2.2
-  resolution: "@activeadmin/activeadmin@npm:3.2.2"
+"@activeadmin/activeadmin@npm:3.2.5":
+  version: 3.2.5
+  resolution: "@activeadmin/activeadmin@npm:3.2.5"
   dependencies:
     jquery: "npm:^3.4.1"
     jquery-ui: "npm:^1.13.3"
     jquery-ujs: "npm:^1.2.2"
-  checksum: 10c0/894914ea987033a0215088030999c44b957a499b412cf581d9b475a049059e2c7e90ff7e4f7a7f076b452c91eddfb8dc70cbe434ef9ec630943f94ea824e3823
+  checksum: 10c0/0096564b73cedbf52eb80bc6eb9183bd781b9b75f1597090a4d6667778d5dfb2d341545d49c571e20083d896e503e287e418ff62c4af6e27aff9dfb6a3925396
   languageName: node
   linkType: hard
 
@@ -933,7 +933,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "hotwire-workshop@workspace:."
   dependencies:
-    "@activeadmin/activeadmin": "npm:3.2.2"
+    "@activeadmin/activeadmin": "npm:3.2.5"
     "@fortawesome/fontawesome-free": "npm:6.5.2"
     "@hotwired/stimulus": "npm:^3.2.2"
     "@hotwired/turbo-rails": "npm:^8.0.0-beta.2"
