@@ -1,3 +1,5 @@
-<div class="flex justify-center mt-8">
-  <%= render List::Product::Component.new(products: @products, pagination: @pagy)%>
-<div>
+<%= turbo_frame_tag 'product_list' do %>
+  <div class="flex justify-center mt-8">
+    <%= render List::Product::Component.new(products: @products, pagination: @pagy)%>
+  <div>
+<% end %>
