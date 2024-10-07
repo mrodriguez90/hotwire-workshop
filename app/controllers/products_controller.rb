@@ -3,17 +3,22 @@
 class ProductsController < ApplicationController
   def index
     @products = policy_scope(Product).includes(picture_attachment: :blob)
-    if params[:q].present?
-      @products = @products.where('name ILIKE ? OR description ILIKE ?', "%#{params[:q]}%", "%#{params[:q]}%")
-    end
-    @products = @products.where(status: params[:status]) if params[:status].present?
-
+    @products = filter_by_query(@products)
+    @products = filter_by_status(@products)
     @pagy, @products = pagy(@products, items: 2)
   end
 
   private
 
-  def product_params
-    params
+  def filter_by_query(products)
+    return products if params[:q].blank?
+
+    products.where('name ILIKE ? OR description ILIKE ?', "%#{params[:q]}%", "%#{params[:q]}%")
+  end
+
+  def filter_by_status(products)
+    return products if params[:status].blank?
+
+    products.where(status: params[:status])
   end
 end
