@@ -24,10 +24,16 @@
   </div>
   <div class='basis:4/4 lg:basis-3/4'>
     <%= turbo_frame_tag 'product_list' do %>
-      <div class="mt-8">
-        <%= render List::Product::Component.new(products: @products, pagination: @pagy)%>
-        <%= render "layouts/pagination", locals: { pagination: @pagy } %>
-      <div>
+      <% if @products.count > 0 %>
+        <div class="mt-8">
+          <%= render List::Product::Component.new(products: @products, pagination: @pagy)%>
+          <%= render "layouts/pagination", locals: { pagination: @pagy } %>
+        <div>
+      <% else %>
+        <div class="mt-8">
+          <h1 class="text-center">No products found</h1>
+        </div>
+      <% end %>
     <% end %>
   </div>
 </div>
