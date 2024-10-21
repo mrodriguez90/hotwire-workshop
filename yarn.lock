@@ -205,20 +205,20 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@hotwired/turbo-rails@npm:^8.0.0-beta.2":
-  version: 8.0.4
-  resolution: "@hotwired/turbo-rails@npm:8.0.4"
+"@hotwired/turbo-rails@npm:^8.0.12":
+  version: 8.0.12
+  resolution: "@hotwired/turbo-rails@npm:8.0.12"
   dependencies:
-    "@hotwired/turbo": "npm:^8.0.4"
+    "@hotwired/turbo": "npm:^8.0.12"
     "@rails/actioncable": "npm:^7.0"
-  checksum: 10c0/c35fdcc79876f3ceaed7100f2e6965bcf9aa647309dce7a6ed685e880ffc1ac475299e00538ecc926addfa4023704c9bd1ea37e70fbef3a77697f7f01d4e344f
+  checksum: 10c0/9a1bb2356edaed85a96c23f057468aa744f1f61339df60cb3db536fc2da64ade9d3cf2ad2524c656eb162908f77d9c0273b0dcdde0a65b812fb9f6d4def6ebb5
   languageName: node
   linkType: hard
 
-"@hotwired/turbo@npm:^8.0.4":
-  version: 8.0.4
-  resolution: "@hotwired/turbo@npm:8.0.4"
-  checksum: 10c0/3e7174d550adf3b9a0a4c45ff5d1b71d47c20de6ae01f646fbbaf8ed447677bd1a5fb6dbd46e95b14645a663fe58a6187c1c6d2a688b0981b5cf437379c5e00a
+"@hotwired/turbo@npm:^8.0.12":
+  version: 8.0.12
+  resolution: "@hotwired/turbo@npm:8.0.12"
+  checksum: 10c0/59fb5f87620a8819968fa54797d672bd59694dc5813bac6070cab204c6845fde50b36c308f6478e187665fd0550c63e674b8d55b9bb92951e56c9159783b5bf3
   languageName: node
   linkType: hard
 
@@ -936,7 +936,7 @@ __metadata:
     "@activeadmin/activeadmin": "npm:3.2.2"
     "@fortawesome/fontawesome-free": "npm:6.5.2"
     "@hotwired/stimulus": "npm:^3.2.2"
-    "@hotwired/turbo-rails": "npm:^8.0.0-beta.2"
+    "@hotwired/turbo-rails": "npm:^8.0.12"
     arctic_admin: "npm:4.3.1"
     autoprefixer: "npm:^10.4.19"
     esbuild: "npm:0.23.0"
